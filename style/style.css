@@ -1,0 +1,106 @@
+  body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #788fbc, #ff9678, #4bbab8, #f76dab);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+  }
+
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    letter-spacing: 0px;
+  }
+
+  .nav-link:hover {
+    color: #0080ff !important;
+    letter-spacing: 1px;
+  }
+
+  .dropdown-item {
+    font-weight: bold;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    letter-spacing: 0px;
+  }
+
+  .dropdown-menu {
+    background-color: #ffffff;
+
+  }
+
+  .dropdown-item:hover {
+    color: #007bff;
+    letter-spacing: 1px;
+  }
+
+  .products .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .card {
+    transition: transform 0.5s ease, box-shadow 0.6s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 25px 20px rgb(0, 0, 0);
+
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgb(255, 255, 255);
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    border-bottom: none;
+    border-radius: 15px 15px 0 0;
+    padding: 0px;
+  }
+
+  .card-title {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
