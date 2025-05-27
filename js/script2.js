@@ -21,7 +21,6 @@ let getData = ()=>{
     })
 };
 
-
 // const handleDelete=(index)=>{
 //     employees.splice(index,1);
 //     localStorage.setItem('employees',JSON.stringify(employees));
@@ -37,6 +36,5 @@ const handleDelete=(id)=>{
     localStorage.setItem('employees',JSON.stringify(newData));
     getData();
 }
-
 
 getData();

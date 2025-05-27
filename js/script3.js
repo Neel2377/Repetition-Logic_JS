@@ -16,9 +16,9 @@ form.addEventListener('submit',(p)=>{
         Qty : Qty.value,
         img_url : img_url.value,
     }
-
+    
     products.push(pro);
     form.reset(); 
     localStorage.setItem('products',JSON.stringify(products));   
-})
+});
 

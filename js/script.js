@@ -21,5 +21,5 @@ form.addEventListener('submit',(e)=>{
     employees.push(emp);
     form.reset(); 
     localStorage.setItem('employees',JSON.stringify(employees));   
-})
+});
 
